@@ -90,6 +90,7 @@ export default function Home() {
       <main id="top">
         <header className="hero">
           <div className="hero-overlay" />
+          <div className="hero-image" style={{ backgroundImage: "url('/images/hero-industrial.jpg')" }} />
           <div className="container">
             <nav className="site-nav">
               <a href="#top" className="brand-block" aria-label="SK Gulf home">
@@ -116,35 +117,42 @@ export default function Home() {
               </div>
             </nav>
 
-            <div className="hero-grid">
-              <div className="hero-copy">
-                <p className="hero-kicker">Integrated Contracting & Innovation | Oman</p>
-                <h1 className="hero-title">
-                  Delivering complex industrial and energy projects with precision, speed, and responsibility.
-                </h1>
-                <p className="hero-subtitle">
-                  SK Gulf Integrated LLC combines contracting excellence, specialized engineering, and sustainability-driven technology to support critical infrastructure across Oman and the region.
-                </p>
-                <div className="hero-actions">
-                  <a className="btn btn-primary" href="#capabilities">Explore Capabilities</a>
-                  <a className="btn btn-ghost" href="#about">Our Journey</a>
+            <div className="hero-shell">
+              <div className="hero-grid">
+                <div className="hero-copy">
+                  <p className="hero-kicker">Integrated Contracting & Innovation | Oman</p>
+                  <h1 className="hero-title">
+                    Building industrial legacies with bold execution and intelligent engineering.
+                  </h1>
+                  <p className="hero-subtitle">
+                    SK Gulf Integrated LLC delivers high-impact contracting, renewable infrastructure, and low-carbon transformation programs for complex environments.
+                  </p>
+                  <div className="hero-actions">
+                    <a className="btn btn-primary" href="#capabilities">Explore Capabilities</a>
+                    <a className="btn btn-ghost hero-ghost" href="#about">Read Our Story</a>
+                  </div>
+                  <div className="hero-slot-label">
+                    <span>{mediaSlots[0].name}</span>
+                    <small>{mediaSlots[0].label}</small>
+                  </div>
                 </div>
-              </div>
 
-              <div className="hero-media media-slot" style={{ backgroundImage: "url('/images/hero-industrial.jpg')" }}>
-                <div className="media-slot-meta">
-                  <span>{mediaSlots[0].name}</span>
-                  <small>{mediaSlots[0].label}</small>
-                </div>
-                <div className="hero-geometry" aria-hidden>
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                </div>
+                <aside className="hero-side-panel" aria-hidden>
+                  <div className="hero-geometry">
+                    <span />
+                    <span />
+                    <span />
+                    <span />
+                    <span />
+                    <span />
+                  </div>
+                  <div className="hero-side-card">
+                    <p>Live Focus</p>
+                    <h3>Complex projects, faster delivery, uncompromised safety.</h3>
+                  </div>
+                </aside>
               </div>
+              <span className="hero-scroll">Scroll</span>
             </div>
           </div>
         </header>
