@@ -92,15 +92,28 @@ export default function Home() {
           <div className="hero-overlay" />
           <div className="container">
             <nav className="site-nav">
-              <a href="#top" className="logo-mark">SK GULF</a>
-              <div className="nav-links">
-                <a href="#about">About</a>
-                <a href="#capabilities">Capabilities</a>
-                <a href="#sustainability">Sustainability</a>
-                <a href="#news">Insights</a>
-                <a href="#contact">Contact</a>
+              <a href="#top" className="brand-block" aria-label="SK Gulf home">
+                <span className="brand-emblem" aria-hidden />
+                <span>
+                  <strong className="logo-mark">SK GULF</strong>
+                  <small className="brand-subline">Building legacy, honoring values.</small>
+                </span>
+              </a>
+              <div className="site-nav-center">
+                <div className="nav-links">
+                  <a href="#about">Who we are</a>
+                  <a href="#capabilities">Capabilities</a>
+                  <a href="#sustainability">Sustainability</a>
+                  <a href="#news">Partners</a>
+                  <a href="#contact">Contact</a>
+                </div>
               </div>
-              <a className="btn btn-ghost nav-cta" href="#contact">Start a Project</a>
+              <div className="nav-utility">
+                <a className="btn btn-ghost nav-cta" href="#contact">Start a Project</a>
+                <button type="button" className="menu-dot" aria-label="Menu">
+                  <span />
+                </button>
+              </div>
             </nav>
 
             <div className="hero-grid">
@@ -122,6 +135,14 @@ export default function Home() {
                 <div className="media-slot-meta">
                   <span>{mediaSlots[0].name}</span>
                   <small>{mediaSlots[0].label}</small>
+                </div>
+                <div className="hero-geometry" aria-hidden>
+                  <span />
+                  <span />
+                  <span />
+                  <span />
+                  <span />
+                  <span />
                 </div>
               </div>
             </div>
@@ -155,9 +176,15 @@ export default function Home() {
               <span className="eyebrow">Our 5+ year journey</span>
               <h2 className="section-title">A focused Omani company scaling with ambition and execution discipline.</h2>
             </div>
-            <p className="lead">
-              Our mission is to deliver contracting, consulting, and technology-enabled services that meet today&apos;s industrial needs while supporting long-term environmental and economic resilience. We align each program with safety, local value creation, and Oman Vision 2040 priorities.
-            </p>
+            <div className="about-copy-wrap">
+              <p className="lead">
+                Our mission is to deliver contracting, consulting, and technology-enabled services that meet today&apos;s industrial needs while supporting long-term environmental and economic resilience. We align each program with safety, local value creation, and Oman Vision 2040 priorities.
+              </p>
+              <aside className="about-note">
+                <h3>Execution Philosophy</h3>
+                <p>We blend field realism, digital intelligence, and disciplined project controls to consistently deliver complex scopes.</p>
+              </aside>
+            </div>
           </div>
         </section>
 
