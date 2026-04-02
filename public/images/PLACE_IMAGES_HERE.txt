@@ -1,0 +1,12 @@
+Put your production images in this folder using EXACT filenames:
+
+1) hero-industrial.jpg        (recommended 1920x1080)
+2) capability-energy.jpg      (recommended 1400x900)
+3) capability-renewables.jpg  (recommended 1400x900)
+4) capability-integrity.jpg   (recommended 1400x900)
+5) sustainability-lab.jpg     (recommended 1600x900)
+
+Notes:
+- JPG or WEBP are best for performance.
+- Keep file sizes optimized (typically under 500KB each when possible).
+- The website already has visual placeholders; once files are added with these names, they will appear automatically.

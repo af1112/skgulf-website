@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Manrope, Playfair_Display } from "next/font/google";
+import { Plus_Jakarta_Sans, Sora } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({
+const jakartaSans = Plus_Jakarta_Sans({
   variable: "--font-manrope",
   subsets: ["latin"],
   display: "swap",
 });
 
-const playfairDisplay = Playfair_Display({
+const sora = Sora({
   variable: "--font-playfair",
   subsets: ["latin"],
   display: "swap",
@@ -60,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${manrope.variable} ${playfairDisplay.variable} h-full antialiased`}>
+    <html lang="en" className={`${jakartaSans.variable} ${sora.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

@@ -58,6 +58,14 @@ export default function Home() {
     "Engineers Integrity GmbH (Germany)",
   ];
 
+  const mediaSlots = [
+    { name: "hero-industrial.jpg", label: "Main hero image (1920x1080)" },
+    { name: "capability-energy.jpg", label: "Energy & chemicals image" },
+    { name: "capability-renewables.jpg", label: "Renewables image" },
+    { name: "capability-integrity.jpg", label: "Asset integrity image" },
+    { name: "sustainability-lab.jpg", label: "Sustainability section image" },
+  ];
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -110,16 +118,12 @@ export default function Home() {
                 </div>
               </div>
 
-              <aside className="hero-panel">
-                <p className="hero-panel-label">Project Snapshot</p>
-                <h2>Built for high-stakes sectors where quality and safety are non-negotiable.</h2>
-                <ul>
-                  <li>Oil & gas field delivery</li>
-                  <li>Utility-scale renewables execution</li>
-                  <li>Asset integrity and risk management</li>
-                  <li>Low-carbon and digital transformation</li>
-                </ul>
-              </aside>
+              <div className="hero-media media-slot" style={{ backgroundImage: "url('/images/hero-industrial.jpg')" }}>
+                <div className="media-slot-meta">
+                  <span>{mediaSlots[0].name}</span>
+                  <small>{mediaSlots[0].label}</small>
+                </div>
+              </div>
             </div>
           </div>
         </header>
@@ -161,6 +165,26 @@ export default function Home() {
           <div className="container">
             <span className="eyebrow">Our capabilities</span>
             <h2 className="section-title">Multi-sector capabilities across energy, infrastructure, and emerging technologies.</h2>
+            <div className="visual-row">
+              <article className="media-slot" style={{ backgroundImage: "url('/images/capability-energy.jpg')" }}>
+                <div className="media-slot-meta">
+                  <span>{mediaSlots[1].name}</span>
+                  <small>{mediaSlots[1].label}</small>
+                </div>
+              </article>
+              <article className="media-slot" style={{ backgroundImage: "url('/images/capability-renewables.jpg')" }}>
+                <div className="media-slot-meta">
+                  <span>{mediaSlots[2].name}</span>
+                  <small>{mediaSlots[2].label}</small>
+                </div>
+              </article>
+              <article className="media-slot" style={{ backgroundImage: "url('/images/capability-integrity.jpg')" }}>
+                <div className="media-slot-meta">
+                  <span>{mediaSlots[3].name}</span>
+                  <small>{mediaSlots[3].label}</small>
+                </div>
+              </article>
+            </div>
             <div className="cap-grid">
               {capabilities.map((item) => (
                 <article className="cap-card" key={item.title}>
@@ -189,6 +213,14 @@ export default function Home() {
                 </article>
               ))}
             </div>
+          </div>
+          <div className="container sustainability-media-wrap">
+            <article className="media-slot media-slot-wide" style={{ backgroundImage: "url('/images/sustainability-lab.jpg')" }}>
+              <div className="media-slot-meta">
+                <span>{mediaSlots[4].name}</span>
+                <small>{mediaSlots[4].label}</small>
+              </div>
+            </article>
           </div>
         </section>
 
