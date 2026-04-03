@@ -1,241 +1,202 @@
-import CapabilityShowcase from "../components/capability-showcase";
+import CapabilityShowcase from "@/components/capability-showcase";
 
 export default function Home() {
-  const priorities = [
+  const markets = [
     {
-      title: "Oman Vision 2040 Alignment",
-      description: "Programs focused on sustainable growth, local capability development, and industrial innovation.",
+      title: "Oil & Gas Contracting",
+      description: "Field execution, brownfield upgrades, and industrial EPC support for critical assets.",
+      image:
+        "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1400&q=80",
     },
     {
-      title: "Strategic Partnerships",
-      description: "Cross-border collaborations that accelerate technology transfer and delivery capacity.",
+      title: "Renewable Energy Projects",
+      description: "Utility-scale solar and wind deployment with grid-integration and reliability focus.",
+      image:
+        "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1400&q=80",
     },
     {
-      title: "Innovation Leadership",
-      description: "XPRIZE ambassador positioning that translates innovation into measurable outcomes.",
+      title: "AI & Automation Solutions",
+      description: "Predictive analytics, autonomous inspection workflows, and operational intelligence systems.",
+      image:
+        "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1400&q=80",
     },
   ];
 
-  const partners = [
-    "XPRIZE (USA)",
-    "CROFT Production Systems (USA)",
-    "Techno-Safe Consultants (India)",
-    "PureGas Carbonics Projects & Engg (India)",
-    "Elile AI (USA)",
-    "Engineers Integrity GmbH (Germany)",
+  const projects = [
+    "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80",
   ];
-
-  const mediaSlots = [
-    { name: "hero-industrial.jpg", label: "Main hero image (1920x1080)" },
-    { name: "capability-energy.jpg", label: "Energy & chemicals image" },
-    { name: "capability-renewables.jpg", label: "Renewables image" },
-    { name: "capability-integrity.jpg", label: "Asset integrity image" },
-    { name: "sustainability-lab.jpg", label: "Sustainability section image" },
-  ];
-
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "SK Gulf Integrated LLC",
-    url: "https://sk-gulf.com",
-    logo: "https://sk-gulf.com/logo.png",
-    description:
-      "SK Gulf Integrated LLC is a 100% Omani company established in 2020, delivering contracting, consulting, and technology-led solutions across energy and industrial sectors.",
-    email: "info@sk-gulf.com",
-    telephone: "+96899505099",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Al-Udhaybah",
-      addressCountry: "OM",
-      postalCode: "130",
-    },
-    sameAs: [],
-  };
 
   return (
     <>
-      <main id="top">
-        <header className="hero">
-          <div className="hero-overlay" />
-          <div className="hero-image" style={{ backgroundImage: "url('/images/hero-industrial.jpg')" }} />
-          <div className="container">
-            <nav className="site-nav">
-              <a href="#top" className="brand-block" aria-label="SK Gulf home">
-                <span className="brand-emblem" aria-hidden />
-                <span>
-                  <strong className="logo-mark">SK GULF</strong>
-                  <small className="brand-subline">Building legacy, honoring values.</small>
-                </span>
-              </a>
-              <div className="site-nav-center">
-                <div className="nav-links">
-                  <a href="#about">Who we are</a>
-                  <a href="#capabilities">Capabilities</a>
-                  <a href="#sustainability">Sustainability</a>
-                  <a href="#news">Partners</a>
-                  <a href="#contact">Contact</a>
-                </div>
-              </div>
-              <div className="nav-utility">
-                <a className="btn btn-ghost nav-cta" href="#contact">Start a Project</a>
-                <button type="button" className="menu-dot" aria-label="Menu">
-                  <span />
-                </button>
-              </div>
+      <main id="top" className="homepage">
+        <header className="topbar fade-in">
+          <div className="container topbar-inner">
+            <a href="#top" className="brand">SK GULF</a>
+            <nav className="menu" aria-label="Primary">
+              <a href="#about">About</a>
+              <a href="#capabilities">Capabilities</a>
+              <a href="#services">Services</a>
+              <a href="#technologies">Technologies</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
             </nav>
-
-            <div className="hero-shell">
-              <div className="hero-grid">
-                <div className="hero-copy">
-                  <p className="hero-kicker">Integrated Contracting & Innovation | Oman</p>
-                  <h1 className="hero-title">
-                    Building industrial legacies with bold execution and intelligent engineering.
-                  </h1>
-                  <p className="hero-subtitle">
-                    SK Gulf Integrated LLC delivers high-impact contracting, renewable infrastructure, and low-carbon transformation programs for complex environments.
-                  </p>
-                  <div className="hero-actions">
-                    <a className="btn btn-primary" href="#capabilities">Explore Capabilities</a>
-                    <a className="btn btn-ghost hero-ghost" href="#about">Read Our Story</a>
-                  </div>
-                  <div className="hero-slot-label">
-                    <span>{mediaSlots[0].name}</span>
-                    <small>{mediaSlots[0].label}</small>
-                  </div>
-                </div>
-
-                <aside className="hero-side-panel" aria-hidden>
-                  <div className="hero-geometry">
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                    <span />
-                  </div>
-                  <div className="hero-side-card">
-                    <p>Live Focus</p>
-                    <h3>Complex projects, faster delivery, uncompromised safety.</h3>
-                  </div>
-                </aside>
-              </div>
-              <span className="hero-scroll">Scroll</span>
-            </div>
+            <a href="#contact" className="btn btn-primary">Get in Touch</a>
           </div>
         </header>
 
-        <section className="stats-strip" aria-label="Company highlights">
-          <div className="container stats-grid">
-            <article>
-              <span className="stat-number">2020</span>
-              <p>Established in Oman</p>
-            </article>
-            <article>
-              <span className="stat-number">100%</span>
-              <p>Omani-owned enterprise</p>
-            </article>
-            <article>
-              <span className="stat-number">8+</span>
-              <p>Core capability domains</p>
-            </article>
-            <article>
-              <span className="stat-number">XPRIZE</span>
-              <p>Ambassador positioning</p>
-            </article>
-          </div>
-        </section>
-
-        <section className="section" id="about">
-          <div className="container about-grid">
+        <section className="hero-light fade-in" id="about">
+          <div className="container hero-light-grid">
             <div>
-              <span className="eyebrow">Our 5+ year journey</span>
-              <h2 className="section-title">A focused Omani company scaling with ambition and execution discipline.</h2>
-            </div>
-            <div className="about-copy-wrap">
+              <p className="kicker">Engineering & Technology Leadership</p>
+              <h1>Engineering the Future of Energy with Intelligence and Innovation</h1>
               <p className="lead">
-                Our mission is to deliver contracting, consulting, and technology-enabled services that meet today&apos;s industrial needs while supporting long-term environmental and economic resilience. We align each program with safety, local value creation, and Oman Vision 2040 priorities.
+                We deliver integrated solutions across Oil & Gas, Renewable Energy, AI-driven operations, and sustainable asset integrity to build resilient energy infrastructure.
               </p>
-              <aside className="about-note">
-                <h3>Execution Philosophy</h3>
-                <p>We blend field realism, digital intelligence, and disciplined project controls to consistently deliver complex scopes.</p>
-              </aside>
+              <div className="hero-buttons">
+                <a href="#capabilities" className="btn btn-primary">Our Capabilities</a>
+                <a href="#contact" className="btn btn-ghost">Contact Us</a>
+              </div>
+            </div>
+
+            <article className="image-shell ratio-16-10">
+              <img
+                src="https://images.unsplash.com/photo-1513828646384-e4d8ec30d2bb?auto=format&fit=crop&w=1600&q=80"
+                alt="Modern energy infrastructure"
+                className="image-media"
+              />
+              <div className="image-overlay" />
+            </article>
+          </div>
+        </section>
+
+        <section className="section fade-in" id="services">
+          <div className="container">
+            <p className="kicker">Markets Overview</p>
+            <h2 className="section-title">Core sectors where we engineer, execute, and optimize performance.</h2>
+            <div className="market-grid">
+              {markets.map((market) => (
+                <article className="market-card" key={market.title}>
+                  <div className="image-shell ratio-4-3">
+                    <img src={market.image} alt={market.title} className="image-media" />
+                    <div className="image-overlay" />
+                  </div>
+                  <h3>{market.title}</h3>
+                  <p>{market.description}</p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
 
-        <section className="section section-soft" id="capabilities">
+        <section className="section section-soft fade-in" id="capabilities">
           <div className="container">
-            <span className="eyebrow">Our capabilities</span>
-            <h2 className="section-title">Choose a sector to explore our execution depth and delivery model.</h2>
+            <p className="kicker">Capabilities Snapshot</p>
+            <h2 className="section-title">Deep multidisciplinary engineering capabilities for critical projects.</h2>
             <CapabilityShowcase />
           </div>
         </section>
 
-        <section className="section" id="sustainability">
-          <div className="container sustainability-grid">
-            <div className="sustainability-panel">
-              <span className="eyebrow eyebrow-light">Sustainability</span>
-              <h2 className="section-title section-title-light">Executing practical transition pathways for lower-carbon operations.</h2>
-              <p>
-                From carbon capture and flare gas solutions to AI-enabled energy optimization, our sustainability portfolio is designed for real environments, not slide decks.
+        <section className="section section-tech fade-in" id="technologies">
+          <div className="container two-col">
+            <div>
+              <p className="kicker">Technologies & Innovation</p>
+              <h2 className="section-title">Applying AI, robotics, and digital engineering to amplify industrial decisions.</h2>
+              <p className="lead">
+                Our technology teams design intelligent workflows for inspection, predictive maintenance, and performance optimization across complex energy and industrial assets.
               </p>
             </div>
-            <div className="priority-list">
-              {priorities.map((item) => (
-                <article key={item.title}>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-          <div className="container sustainability-media-wrap">
-            <article className="media-slot media-slot-wide" style={{ backgroundImage: "url('/images/sustainability-lab.jpg')" }}>
-              <div className="media-slot-meta">
-                <span>{mediaSlots[4].name}</span>
-                <small>{mediaSlots[4].label}</small>
-              </div>
+            <article className="image-shell ratio-4-3">
+              <img
+                src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80"
+                alt="AI and robotics in engineering"
+                className="image-media"
+              />
+              <div className="image-overlay" />
             </article>
           </div>
         </section>
 
-        <section className="section section-soft" id="news">
+        <section className="section fade-in" id="integrity">
+          <div className="container two-col">
+            <article className="image-shell ratio-4-3">
+              <img
+                src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1400&q=80"
+                alt="Smart monitoring and asset inspection"
+                className="image-media"
+              />
+              <div className="image-overlay" />
+            </article>
+            <div>
+              <p className="kicker">Sustainable Asset Integrity</p>
+              <h2 className="section-title">Smart monitoring, intelligent inspection, and reliability-led operations.</h2>
+              <p className="lead">
+                We combine inspection engineering, real-time monitoring, and AI diagnostics to reduce risk, extend asset life, and support low-carbon operational performance.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="section section-soft fade-in" id="projects">
           <div className="container">
-            <span className="eyebrow">Global network</span>
-            <h2 className="section-title">Partnership ecosystem supporting delivery excellence.</h2>
-            <div className="partner-grid">
-              {partners.map((partner) => (
-                <article className="partner-card" key={partner}>
-                  <p>{partner}</p>
+            <p className="kicker">Projects Gallery</p>
+            <h2 className="section-title">Selected project environments and execution contexts.</h2>
+            <div className="gallery-grid">
+              {projects.map((image, index) => (
+                <article key={`${image}-${index}`} className="gallery-item image-shell ratio-1-1">
+                  <img src={image} alt={`Project ${index + 1}`} className="image-media" />
+                  <div className="image-overlay" />
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="section" id="contact">
-          <div className="container contact-cta">
+        <section className="section fade-in" id="vision">
+          <div className="container vision-wrap">
             <div>
-              <span className="eyebrow">Contact</span>
-              <h2 className="section-title">Let&apos;s build your next critical project.</h2>
-              <p className="lead">SK Gulf Integrated LLC, PO# 3118, PC# 130, Al-Udhaybah, Sultanate of Oman.</p>
+              <p className="kicker">Vision & Sustainability</p>
+              <h2 className="section-title">Building an intelligent energy future aligned with sustainability and trust.</h2>
+              <p className="lead">
+                Our long-term strategy blends engineering discipline with innovation to deliver measurable value for clients, communities, and the environment.
+              </p>
             </div>
-            <div className="contact-actions">
-              <a className="btn btn-primary" href="mailto:info@sk-gulf.com">info@sk-gulf.com</a>
-              <a className="btn btn-ghost" href="tel:+96899505099">+968 9950 5099</a>
-            </div>
+            <article className="vision-image image-shell ratio-4-3">
+              <img
+                src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=1400&q=80"
+                alt="Sustainable landscape"
+                className="image-media image-faded"
+              />
+              <div className="image-overlay" />
+            </article>
+          </div>
+        </section>
+
+        <section className="cta-band fade-in" id="contact">
+          <div className="container cta-band-inner">
+            <h2>Let&apos;s Build the Future of Energy Together</h2>
+            <a href="mailto:info@sk-gulf.com" className="btn btn-primary">Contact</a>
           </div>
         </section>
       </main>
 
-      <footer className="site-footer">
-        <div className="container footer-wrap">
-          <span>© {new Date().getFullYear()} SK Gulf Integrated LLC. All rights reserved.</span>
-          <a href="#top">Back to top</a>
+      <footer className="footer-pro">
+        <div className="container footer-pro-inner">
+          <div>
+            <strong>SK Gulf Integrated LLC</strong>
+            <p>Oil & Gas · Renewables · AI · Smart Asset Integrity</p>
+          </div>
+          <div>
+            <p>info@sk-gulf.com</p>
+            <p>+968 9950 5099</p>
+          </div>
+          <span>© {new Date().getFullYear()} SK Gulf. All rights reserved.</span>
         </div>
       </footer>
-
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     </>
   );
 }
