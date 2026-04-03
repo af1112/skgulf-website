@@ -1,39 +1,6 @@
-export default function Home() {
-  const capabilities = [
-    {
-      title: "Energy & Chemicals",
-      description: "Full-scope contracting support for upstream, midstream, and downstream operations.",
-    },
-    {
-      title: "Renewables",
-      description: "Utility solar and wind execution from site development to commissioning support.",
-    },
-    {
-      title: "Power & Water",
-      description: "Design and delivery support for power systems, water assets, and industrial utilities.",
-    },
-    {
-      title: "Asset Integrity",
-      description: "Reliability engineering, corrosion control, and risk-based integrity frameworks.",
-    },
-    {
-      title: "HSE & Process Safety",
-      description: "HAZID, HAZOP, QRA, SIMOPS, and COMAH studies for safer operations.",
-    },
-    {
-      title: "Workforce & Sourcing",
-      description: "Talent deployment, procurement, and supply chain orchestration for complex projects.",
-    },
-    {
-      title: "Digital & AI",
-      description: "Automation and predictive analytics for energy assets and industrial performance.",
-    },
-    {
-      title: "Low Carbon Solutions",
-      description: "Carbon capture, flare gas utilization, and sustainability technologies with real field impact.",
-    },
-  ];
+import CapabilityShowcase from "../components/capability-showcase";
 
+export default function Home() {
   const priorities = [
     {
       title: "Oman Vision 2040 Alignment",
@@ -199,35 +166,8 @@ export default function Home() {
         <section className="section section-soft" id="capabilities">
           <div className="container">
             <span className="eyebrow">Our capabilities</span>
-            <h2 className="section-title">Multi-sector capabilities across energy, infrastructure, and emerging technologies.</h2>
-            <div className="visual-row">
-              <article className="media-slot" style={{ backgroundImage: "url('/images/capability-energy.jpg')" }}>
-                <div className="media-slot-meta">
-                  <span>{mediaSlots[1].name}</span>
-                  <small>{mediaSlots[1].label}</small>
-                </div>
-              </article>
-              <article className="media-slot" style={{ backgroundImage: "url('/images/capability-renewables.jpg')" }}>
-                <div className="media-slot-meta">
-                  <span>{mediaSlots[2].name}</span>
-                  <small>{mediaSlots[2].label}</small>
-                </div>
-              </article>
-              <article className="media-slot" style={{ backgroundImage: "url('/images/capability-integrity.jpg')" }}>
-                <div className="media-slot-meta">
-                  <span>{mediaSlots[3].name}</span>
-                  <small>{mediaSlots[3].label}</small>
-                </div>
-              </article>
-            </div>
-            <div className="cap-grid">
-              {capabilities.map((item) => (
-                <article className="cap-card" key={item.title}>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </article>
-              ))}
-            </div>
+            <h2 className="section-title">Choose a sector to explore our execution depth and delivery model.</h2>
+            <CapabilityShowcase />
           </div>
         </section>
 
