@@ -56,8 +56,13 @@ export const metadata: Metadata = {
     canonical: "https://sk-gulf.com",
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-icon.png",
+    icon: [
+      { url: "/favicon.ico?v=2" },
+      { url: "/apple-icon.png?v=2", type: "image/png", sizes: "180x180" },
+      { url: "/images/logo.png?v=2", type: "image/png", sizes: "96x96" },
+    ],
+    shortcut: "/favicon.ico?v=2",
+    apple: "/apple-icon.png?v=2",
   },
 };
 
