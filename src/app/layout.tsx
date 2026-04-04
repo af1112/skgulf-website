@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Sora } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/lib/language-context";
 
-const jakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-manrope",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
 });
 
-const sora = Sora({
-  variable: "--font-playfair",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
   display: "swap",
 });
@@ -17,40 +18,46 @@ const sora = Sora({
 export const metadata: Metadata = {
   metadataBase: new URL("https://sk-gulf.com"),
   title: {
-    default: "SK Gulf Integrated LLC | Contracting, Consulting, R&D",
-    template: "%s | SK Gulf",
+    default: "SK-GULF INTEGRATED LLC | Engineering & Technology",
+    template: "%s | SK-GULF",
   },
   description:
-    "SK Gulf Integrated LLC is a 100% Omani company established in 2020, delivering oil and gas contracting, renewable energy solutions, AI technologies, and sustainability-led innovation.",
-  applicationName: "SK Gulf Website",
+    "SK-GULF INTEGRATED LLC is a 100% Omani company delivering oil and gas contracting, renewable energy, AI technologies, and sustainability-led innovation across the Middle East.",
+  applicationName: "SK-GULF",
   keywords: [
+    "SK-GULF",
     "SK Gulf",
-    "industrial services",
-    "infrastructure",
     "engineering",
-    "contracting",
-    "oman",
-    "renewable energy",
     "oil and gas",
+    "renewable energy",
+    "AI",
+    "asset integrity",
+    "Oman",
+    "contracting",
+    "smart monitoring",
     "carbon capture",
   ],
   openGraph: {
-    title: "SK Gulf Integrated LLC | Contracting, Consulting, R&D",
+    title: "SK-GULF INTEGRATED LLC | Engineering & Technology",
     description:
-      "Oil and gas, renewables, AI technologies, and specialized industrial services delivered with safety and sustainability at the core.",
+      "Integrated engineering, contracting, and technology solutions for Oil & Gas, Renewables, AI, and Smart Asset Integrity.",
     url: "https://sk-gulf.com",
-    siteName: "SK Gulf",
+    siteName: "SK-GULF",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SK Gulf Integrated LLC | Contracting, Consulting, R&D",
+    title: "SK-GULF INTEGRATED LLC | Engineering & Technology",
     description:
-      "Oil and gas, renewables, AI technologies, and specialized industrial services delivered with safety and sustainability at the core.",
+      "Integrated engineering, contracting, and technology solutions for Oil & Gas, Renewables, AI, and Smart Asset Integrity.",
   },
   alternates: {
     canonical: "https://sk-gulf.com",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
 };
 
@@ -60,8 +67,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${jakartaSans.variable} ${sora.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
+      <body>
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }
