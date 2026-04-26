@@ -808,7 +808,88 @@ img { max-width: 100%; display: block; }
   transition: gap var(--duration-normal) var(--ease-out);
 }
 
-.cap-visual-cta:hover { gap: 0.85rem; }
+.cap-visual-cta:hover {
+  background: white;
+  color: var(--navy);
+  transform: translateX(4px);
+}
+
+/* Capability Projects */
+.cap-projects-section {
+  margin-top: 4rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.cap-projects-header {
+  margin-bottom: 2.5rem;
+}
+
+.cap-projects-header h3 {
+  font-family: var(--font-jakarta);
+  font-size: 1.75rem;
+  color: var(--navy);
+  margin-top: 0.5rem;
+}
+
+.cap-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.cap-project-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  border: 1px solid var(--gray-100);
+  box-shadow: var(--shadow-sm);
+}
+
+.cap-project-info {
+  margin-bottom: 1.5rem;
+}
+
+.cap-project-info h4 {
+  font-family: var(--font-jakarta);
+  font-size: 1.25rem;
+  color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+
+.cap-project-location {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.cap-project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cap-project-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.cap-project-img-wrapper {
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.cap-project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.cap-project-card:hover .cap-project-img {
+  transform: scale(1.05);
+}
 
 /* ===== TECHNOLOGIES ===== */
 .tech-grid {
@@ -1210,6 +1291,43 @@ img { max-width: 100%; display: block; }
 .cta-btn-outline:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ===== PARTNERS ===== */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 640px) {
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .partners-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.partner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-100);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.partner-logo:hover {
+  border-color: var(--blue-200);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
 }
 
 /* ===== FOOTER ===== */

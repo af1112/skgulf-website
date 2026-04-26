@@ -181,6 +181,69 @@ export default function HomeContent() {
           </div>
         </section>
 
+        {/* ===== PARTNERS ===== */}
+        <section className="section" id="partners">
+          <div className="container">
+            <ScrollReveal>
+              <div className="section-header">
+                <span className="section-label">{t.partners.label}</span>
+                <h2 className="section-heading">{t.partners.heading}</h2>
+                <p className="section-description">{t.partners.description}</p>
+              </div>
+            </ScrollReveal>
+
+            <div className="partners-grid">
+              {["AKAF_Logo.png", "asfar_logo.png"].map((logo, i) => (
+                <ScrollReveal key={logo} delay={i + 1}>
+                  <div className="partner-logo">
+                    <Image
+                      src={`/images/partners/${logo}`}
+                      alt={`Partner ${i + 1}`}
+                      width={200}
+                      height={100}
+                      style={{ objectFit: "contain", opacity: 0.7, filter: "grayscale(100%)" }}
+                      className="hover:opacity-100 hover:filter-none transition-all duration-300"
+                    />
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ===== CLIENTS (Experience) ===== */}
+        <section className="section section-gray" id="clients">
+          <div className="container">
+            <ScrollReveal>
+              <div className="section-header">
+                <span className="section-label">{t.clients.label}</span>
+                <h2 className="section-heading">{t.clients.heading}</h2>
+                <p className="section-description">{t.clients.description}</p>
+              </div>
+            </ScrollReveal>
+
+            <div className="partners-grid">
+              {[1, 2, 3, 4].map((i) => (
+                <ScrollReveal key={i} delay={i}>
+                  <div className="partner-logo">
+                    <Image
+                      src={`/images/clients/client-${i}.png`}
+                      alt={`Client ${i}`}
+                      width={200}
+                      height={100}
+                      style={{ objectFit: "contain", opacity: 0.7, filter: "grayscale(100%)" }}
+                      className="hover:opacity-100 hover:filter-none transition-all duration-300"
+                      onError={(e) => {
+                        (e.target as any).src = "https://via.placeholder.com/200x100?text=Client+Logo";
+                      }}
+                    />
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ===== TECHNOLOGIES ===== */}
         <section className="section" id="technologies">
           <div className="container">

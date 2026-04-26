@@ -64,6 +64,48 @@ export const translations = {
       ourCapabilities: "Our Capabilities",
       items: [
         {
+          title: "Construction",
+          description:
+            "Comprehensive construction services for industrial and commercial infrastructure, ensuring structural integrity and excellence.",
+          bullet: "Industrial facilities, commercial buildings, and infrastructure development.",
+        },
+        {
+          title: "Interior Designing",
+          description:
+            "Creative and functional interior design and decoration solutions that blend aesthetics with operational efficiency.",
+          bullet: "Office spaces, industrial interiors, and custom decoration concepts.",
+        },
+        {
+          title: "Furniture Work",
+          description:
+            "Bespoke furniture solutions and fit-out works tailored to industrial and commercial requirements.",
+          bullet: "Custom furniture design, installation, and high-quality finishes.",
+        },
+        {
+          title: "Ideation",
+          description:
+            "Strategic brainstorming and conceptual development to solve complex industrial challenges.",
+          bullet: "Creative problem solving, feasibility studies, and innovation workshops.",
+        },
+        {
+          title: "Design",
+          description:
+            "Detailed engineering and architectural design services focused on precision and performance.",
+          bullet: "3D modeling, technical drafting, and architectural planning.",
+        },
+        {
+          title: "Automation",
+          description:
+            "Advanced industrial automation solutions to optimize processes, reduce costs, and enhance safety.",
+          bullet: "Robotics, control systems, and smart factory integration.",
+        },
+        {
+          title: "Software Development",
+          description:
+            "Custom software solutions for industrial monitoring, asset management, and digital transformation.",
+          bullet: "Enterprise software, IoT platforms, and data analytics tools.",
+        },
+        {
           title: "Energy & Chemicals",
           description:
             "Integrated contracting and execution support for upstream, downstream, and specialty process environments.",
@@ -85,26 +127,23 @@ export const translations = {
             "Execution-grade planning for reliability, safety, and long-term operational confidence.",
         },
         {
-          title: "Buildings & Industrial",
-          description:
-            "Civil, MEP, and construction services for high-performance industrial and operational buildings.",
-          bullet: "Constructability-led design support and multidisciplinary site delivery.",
-        },
-        {
           title: "Asset Integrity & HSE",
           description:
             "Risk-based integrity management with HAZOP, QRA, SIMOPS, and reliability-centered maintenance programs.",
           bullet:
             "Data-backed interventions that reduce downtime and elevate compliance maturity.",
         },
-        {
-          title: "Digital & Low Carbon",
-          description:
-            "AI-enabled operations, carbon solutions, and practical decarbonization pathways for industrial portfolios.",
-          bullet:
-            "Field-ready technology strategies with measurable operational and environmental returns.",
-        },
       ],
+    },
+    partners: {
+      label: "Strategic Partners",
+      heading: "Our Partnerships",
+      description: "Collaborating with industry leaders to deliver excellence.",
+    },
+    clients: {
+      label: "Experience & Track Record",
+      heading: "Companies We've Worked With",
+      description: "A history of successful collaborations and project deliveries across various sectors.",
     },
     technologies: {
       label: "Technologies & Innovation",
@@ -266,36 +305,83 @@ export const translations = {
       ourCapabilities: "قدراتنا",
       items: [
         {
+          title: "الإنشاءات",
+          description:
+            "خدمات إنشائية شاملة للبنية التحتية الصناعية والتجارية، مع ضمان السلامة الهيكلية والتميز.",
+          bullet: "المنشآت الصناعية، المباني التجارية، وتطوير البنية التحتية.",
+        },
+        {
+          title: "التصميم الداخلي والديكور",
+          description:
+            "حلول تصميم داخلي وديكور مبتكرة وعملية تمزج بين الجمال والكفاءة التشغيلية.",
+          bullet: "المساحات المكتبية، التصميمات الصناعية، ومفاهيم الديكور المخصصة.",
+        },
+        {
+          title: "أعمال الأثاث",
+          description:
+            "حلول أثاث مخصصة وأعمال التجهيز المصممة لتلبية المتطلبات الصناعية والتجارية.",
+          bullet: "تصميم الأثاث المخصص، التركيب، والتشطيبات عالية الجودة.",
+        },
+        {
+          title: "الابتكار والفكر (Ideation)",
+          description:
+            "جلسات العصف الذهني الاستراتيجي والتطوير المفاهيمي لحل التحديات الصناعية المعقدة.",
+          bullet: "حل المشكلات الإبداعي، دراسات الجدوى، وورش عمل الابتكار.",
+        },
+        {
+          title: "التصميم",
+          description:
+            "خدمات التصميم الهندسي والمعماري التفصيلي التي تركز على الدقة والأداء.",
+          bullet: "النمذجة ثلاثية الأبعاد، الرسم الفني، والتخطيط المعماري.",
+        },
+        {
+          title: "الأتمتة",
+          description:
+            "حلول أتمتة صناعية متقدمة لتحسين العمليات وتقليل التكاليف وتعزيز السلامة.",
+          bullet: "الروبوتات، أنظمة التحكم، وتكامل المصانع الذكية.",
+        },
+        {
+          title: "تطوير البرمجيات",
+          description:
+            "حلول برمجية مخصصة للمراقبة الصناعية وإدارة الأصول والتحول الرقمي.",
+          bullet: "برمجيات المؤسسات، منصات إنترنت الأشياء، وأدوات تحليل البيانات.",
+        },
+        {
           title: "الطاقة والكيماويات",
-          description: "دعم متكامل للمقاولات والتنفيذ لبيئات المعالجة العليا والسفلى والمتخصصة.",
-          bullet: "تحديث المنشآت القائمة وتخطيط البناء وتنسيق السلامة بلا تنازلات.",
+          description:
+            "دعم متكامل للمقاولات والتنفيذ لبيئات العمليات في قطاعات الاستكشاف والإنتاج والتكرير.",
+          bullet:
+            "تحديث المنشآت القائمة، تخطيط الإنشاءات، وإدارة السلامة دون تقديم أي تنازلات.",
         },
         {
           title: "الطاقة المتجددة والمياه",
-          description: "بنية تحتية للطاقة الشمسية والرياح والمياه على نطاق واسع مع التركيز على الجدول الزمني ودورة الحياة.",
-          bullet: "من الاستعداد الميداني والأعمال المدنية إلى دعم التسليم وتحسين الأداء.",
+          description:
+            "مشاريع الطاقة الشمسية والرياح والبنية التحتية للطاقة والمياه على نطاق واسع.",
+          bullet: "من جاهزية الموقع والأعمال المدنية إلى دعم التسليم وتحسين الأداء.",
         },
         {
           title: "خطوط الأنابيب وأنظمة التدفق",
-          description: "سلامة خطوط الأنابيب وتنفيذ المسارات وتسليم النطاق الميكانيكي للأصول الحيوية.",
-          bullet: "تخطيط من مستوى التنفيذ للموثوقية والسلامة والثقة التشغيلية طويلة المدى.",
+          description:
+            "سلامة خطوط الأنابيب، تنفيذ المسارات، وتسليم النطاق الميكانيكي للأصول الحيوية.",
+          bullet: "تخطيط بمستوى التنفيذ للموثوقية والسلامة والتشغيل طويل الأمد.",
         },
         {
-          title: "المباني والصناعة",
-          description: "خدمات مدنية وكهروميكانيكية وبناء للمباني الصناعية عالية الأداء.",
-          bullet: "دعم التصميم القائم على القابلية للبناء والتسليم متعدد التخصصات.",
-        },
-        {
-          title: "سلامة الأصول والسلامة المهنية",
-          description: "إدارة السلامة القائمة على المخاطر مع HAZOP وQRA وSIMOPS وبرامج الصيانة المرتكزة على الموثوقية.",
-          bullet: "تدخلات مدعومة بالبيانات تقلل التوقف وترفع مستوى الامتثال.",
-        },
-        {
-          title: "الرقمنة وخفض الكربون",
-          description: "عمليات مدعومة بالذكاء الاصطناعي وحلول الكربون ومسارات عملية لإزالة الكربون.",
-          bullet: "استراتيجيات تقنية جاهزة للميدان بعوائد تشغيلية وبيئية قابلة للقياس.",
+          title: "سلامة الأصول والبيئة والصحة",
+          description:
+            "إدارة النزاهة القائمة على المخاطر مع برامج HAZOP و QRA و SIMOPS والصيانة المرتكزة على الموثوقية.",
+          bullet: "التدخلات المدعومة بالبيانات التي تقلل من وقت التوقف عن العمل وترفع مستوى الامتثال.",
         },
       ],
+    },
+    partners: {
+      label: "الشركاء الاستراتيجيون",
+      heading: "شراكاتنا",
+      description: "نحن نتعاون مع قادة الصناعة لتقديم التميز في كل مشروع.",
+    },
+    clients: {
+      label: "الخبرة وسجل الأعمال",
+      heading: "شركات عملنا معها",
+      description: "تاریخ من التعاون الناجح وتسلیم المشاريع في مختلف القطاعات.",
     },
     technologies: {
       label: "التقنيات والابتكار",
