@@ -13,7 +13,7 @@ const capImages = [
   "https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&w=1200&q=80", // Design
   "https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?auto=format&fit=crop&w=1200&q=80", // Automation
   "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80", // Software Development
-  "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80", // Energy & Chemicals
+  "https://images.unsplash.com/photo-1544333346-64e4fe18274b?auto=format&fit=crop&w=1200&q=80", // Energy & Chemicals (Refinery/Plant)
   "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80", // Renewables
   "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80", // Pipelines
   "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1200&q=80", // Asset Integrity
@@ -71,8 +71,8 @@ export default function CapabilityShowcase() {
               <Image
                 src={activeItem.image}
                 alt={activeItem.title}
-                width={800}
-                height={600}
+                fill
+                style={{ objectFit: "cover" }}
                 key={activeItem.id}
                 priority
               />
