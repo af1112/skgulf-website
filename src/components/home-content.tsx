@@ -227,7 +227,7 @@ export default function HomeContent() {
                 <ScrollReveal key={logo} delay={i + 1}>
                   <div className="partner-logo">
                     <Image
-                      src={`/images/clients/${logo}`}
+                      src={`/images/Clients/${logo}`}
                       alt={`Client ${i + 1}`}
                       width={200}
                       height={100}

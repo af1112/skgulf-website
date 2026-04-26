@@ -6,17 +6,17 @@ import ScrollReveal from "./scroll-reveal";
 import { useLanguage } from "@/lib/language-context";
 
 const capImages = [
-  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80", // Construction
-  "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80", // Interior Designing
-  "https://images.unsplash.com/photo-1538688525198-9b88f6f50126?auto=format&fit=crop&w=1200&q=80", // Furniture Work
-  "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80", // Ideation
-  "https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&w=1200&q=80", // Design
-  "https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?auto=format&fit=crop&w=1200&q=80", // Automation
-  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80", // Software Development
-  "https://images.unsplash.com/photo-1544333346-64e4fe18274b?auto=format&fit=crop&w=1200&q=80", // Energy & Chemicals (Refinery/Plant)
-  "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80", // Renewables
-  "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80", // Pipelines
-  "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1200&q=80", // Asset Integrity
+  "/images/project-01.webp", // Construction
+  "/images/project-02.webp", // Interior Designing
+  "/images/project-03.webp", // Furniture Work
+  "/images/project-04.webp", // Ideation
+  "/images/project-05.webp", // Design
+  "/images/project-06.webp", // Automation
+  "/images/hero.webp",       // Software Development
+  "/images/market-oil-gas.webp", // Energy & Chemicals
+  "/images/market-renewable.webp", // Renewables
+  "/images/project-01.webp", // Pipelines
+  "/images/project-02.webp", // Asset Integrity
 ];
 
 export default function CapabilityShowcase() {
