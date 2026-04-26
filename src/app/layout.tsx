@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon.ico?v=2" },
       { url: "/apple-icon.png?v=2", type: "image/png", sizes: "180x180" },
-      { url: "/images/logo.png?v=2", type: "image/png", sizes: "96x96" },
+      { url: "/images/logo.webp?v=2", type: "image/webp", sizes: "96x96" },
     ],
     shortcut: "/favicon.ico?v=2",
     apple: "/apple-icon.png?v=2",
@@ -89,7 +89,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "SK-GULF INTEGRATED LLC",
               "url": "https://sk-gulf.com",
-              "logo": "https://sk-gulf.com/images/logo.png",
+              "logo": "https://sk-gulf.com/images/logo.webp",
               "description": "SK-GULF INTEGRATED LLC is a 100% Omani company delivering oil and gas contracting, renewable energy, AI technologies, and sustainability-led innovation.",
               "address": {
                 "@type": "PostalAddress",

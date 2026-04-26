@@ -40,7 +40,7 @@ export default function NavBar() {
       <nav className={`nav${scrolled ? " scrolled" : ""}`}>
         <div className="container nav-inner">
           <a href="#top" className="nav-logo">
-            <Image src="/images/logo.png" alt="SK-GULF" width={140} height={42} priority />
+            <Image src="/images/logo.webp" alt="SK-GULF" width={140} height={42} priority />
           </a>
 
           <div className="nav-links">
