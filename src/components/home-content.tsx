@@ -197,13 +197,13 @@ export default function HomeContent() {
                 <ScrollReveal key={logo} delay={i + 1}>
                   <div className="partner-logo">
                     <Image
-                      src={`/images/partners/${logo}`}
-                      alt={`Partner ${i + 1}`}
-                      width={200}
-                      height={100}
-                      style={{ objectFit: "contain", opacity: 0.7, filter: "grayscale(100%)" }}
-                      className="hover:opacity-100 hover:filter-none transition-all duration-300"
-                    />
+                  src={`/images/partners/${logo}`}
+                  alt={`Partner ${i + 1}`}
+                  width={200}
+                  height={100}
+                  style={{ objectFit: "contain" }}
+                  className="hover:scale-110 transition-transform duration-300"
+                />
                   </div>
                 </ScrollReveal>
               ))}
@@ -231,8 +231,8 @@ export default function HomeContent() {
                       alt={`Client ${i}`}
                       width={200}
                       height={100}
-                      style={{ objectFit: "contain", opacity: 0.7, filter: "grayscale(100%)" }}
-                      className="hover:opacity-100 hover:filter-none transition-all duration-300"
+                      style={{ objectFit: "contain" }}
+                      className="hover:scale-110 transition-transform duration-300"
                       onError={(e) => {
                         (e.target as any).src = "https://via.placeholder.com/200x100?text=Client+Logo";
                       }}

@@ -6,12 +6,17 @@ import ScrollReveal from "./scroll-reveal";
 import { useLanguage } from "@/lib/language-context";
 
 const capImages = [
-  "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80", // Construction
+  "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80", // Interior Designing
+  "https://images.unsplash.com/photo-1538688525198-9b88f6f50126?auto=format&fit=crop&w=1200&q=80", // Furniture Work
+  "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80", // Ideation
+  "https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&w=1200&q=80", // Design
+  "https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?auto=format&fit=crop&w=1200&q=80", // Automation
+  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80", // Software Development
+  "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80", // Energy & Chemicals
+  "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80", // Renewables
+  "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80", // Pipelines
+  "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1200&q=80", // Asset Integrity
 ];
 
 export default function CapabilityShowcase() {
@@ -60,25 +65,28 @@ export default function CapabilityShowcase() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={2}>
-          <div className="cap-visual">
-            <Image
-              src={activeItem.image}
-              alt={activeItem.title}
-              width={800}
-              height={600}
-              key={activeItem.id}
-            />
-            <div className="cap-visual-overlay" />
-            <div className="cap-visual-content">
-              <h3>{activeItem.title}</h3>
-              <p>{activeItem.description}</p>
-              <a href="#contact" className="cap-visual-cta">
-                {t.capabilities.learnMore} →
-              </a>
+        <div className="cap-visual-wrapper">
+          <ScrollReveal delay={2}>
+            <div className="cap-visual">
+              <Image
+                src={activeItem.image}
+                alt={activeItem.title}
+                width={800}
+                height={600}
+                key={activeItem.id}
+                priority
+              />
+              <div className="cap-visual-overlay" />
+              <div className="cap-visual-content">
+                <h3>{activeItem.title}</h3>
+                <p>{activeItem.description}</p>
+                <a href="#contact" className="cap-visual-cta">
+                  {t.capabilities.learnMore} →
+                </a>
+              </div>
             </div>
-          </div>
-        </ScrollReveal>
+          </ScrollReveal>
+        </div>
       </div>
 
       {activeItem.projects && activeItem.projects.length > 0 && (

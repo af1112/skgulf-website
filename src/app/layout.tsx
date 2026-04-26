@@ -81,6 +81,29 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
       <body>
         <LanguageProvider>{children}</LanguageProvider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "SK-GULF INTEGRATED LLC",
+              "url": "https://sk-gulf.com",
+              "logo": "https://sk-gulf.com/images/logo.png",
+              "description": "SK-GULF INTEGRATED LLC is a 100% Omani company delivering oil and gas contracting, renewable energy, AI technologies, and sustainability-led innovation.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Muscat",
+                "addressCountry": "Oman"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+968-XXXX-XXXX",
+                "contactType": "customer service"
+              }
+            })
+          }}
+        />
       </body>
     </html>
   );
