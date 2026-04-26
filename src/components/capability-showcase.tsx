@@ -6,17 +6,17 @@ import ScrollReveal from "./scroll-reveal";
 import { useLanguage } from "@/lib/language-context";
 
 const capImages = [
-  "/images/project-01.webp", // Construction
-  "/images/project-02.webp", // Interior Designing
-  "/images/project-03.webp", // Furniture Work
-  "/images/project-04.webp", // Ideation
-  "/images/project-05.webp", // Design
-  "/images/project-06.webp", // Automation
-  "/images/hero.webp",       // Software Development
-  "/images/market-oil-gas.webp", // Energy & Chemicals
-  "/images/market-renewable.webp", // Renewables
-  "/images/project-01.webp", // Pipelines
-  "/images/project-02.webp", // Asset Integrity
+  "/images/caps/construction.jpg",
+  "/images/caps/interior.jpg",
+  "/images/caps/furniture.jpg",
+  "/images/caps/ideation.jpg",
+  "/images/caps/design.jpg",
+  "/images/caps/automation.jpg",
+  "/images/caps/software.jpg",
+  "/images/caps/energy.jpg",
+  "/images/caps/renewables.jpg",
+  "/images/caps/pipelines.jpg",
+  "/images/caps/integrity.jpg",
 ];
 
 export default function CapabilityShowcase() {

@@ -223,7 +223,25 @@ export default function HomeContent() {
             </ScrollReveal>
 
             <div className="partners-grid">
-              {["GPS.webp", "L&T.webp"].map((logo, i) => (
+              {[
+                "GPS.webp",
+                "L&T.webp",
+                "PHOTO-2026-04-26-16-40-51.jpg",
+                "PHOTO-2026-04-26-16-42-01_1.jpg",
+                "PHOTO-2026-04-26-16-42-02.jpg",
+                "PHOTO-2026-04-26-16-42-02_1.jpg",
+                "PHOTO-2026-04-26-16-42-02_2.jpg",
+                "PHOTO-2026-04-26-16-42-02_3.jpg",
+                "PHOTO-2026-04-26-16-42-02_5.jpg",
+                "PHOTO-2026-04-26-16-42-02_6.jpg",
+                "PHOTO-2026-04-26-16-42-02_7.jpg",
+                "PHOTO-2026-04-26-16-42-02_8.jpg",
+                "PHOTO-2026-04-26-16-42-02_9.jpg",
+                "PHOTO-2026-04-26-16-42-02_10.jpg",
+                "PHOTO-2026-04-26-16-44-04.jpg",
+                "PHOTO-2026-04-26-16-45-58.jpg",
+                "PHOTO-2026-04-26-16-47-12.jpg",
+              ].map((logo, i) => (
                 <ScrollReveal key={logo} delay={i + 1}>
                   <div className="partner-logo">
                     <Image
