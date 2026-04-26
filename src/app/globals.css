@@ -3,7 +3,7 @@
 @theme inline {
   --font-sans: var(--font-inter);
   --font-heading: var(--font-jakarta);
-  --font-arabic: var(--font-ibm-plex-arabic);
+  --font-arabic: var(--font-noto-arabic);
 }
 
 /* =============================================
@@ -45,8 +45,8 @@
 }
 
 [lang="ar"] {
-  --font-sans: var(--font-ibm-plex-arabic);
-  --font-heading: var(--font-ibm-plex-arabic);
+  --font-sans: var(--font-noto-arabic);
+  --font-heading: var(--font-noto-arabic);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }

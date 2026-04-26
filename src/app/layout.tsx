@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Plus_Jakarta_Sans, IBM_Plex_Sans_Arabic } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans, Noto_Sans_Arabic } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/language-context";
 
@@ -15,8 +15,8 @@ const jakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const ibmPlexArabic = IBM_Plex_Sans_Arabic({
-  variable: "--font-ibm-plex-arabic",
+const notoArabic = Noto_Sans_Arabic({
+  variable: "--font-noto-arabic",
   subsets: ["arabic"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
@@ -85,7 +85,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jakarta.variable} ${ibmPlexArabic.variable}`}>
+    <html lang="en" className={`${inter.variable} ${jakarta.variable} ${notoArabic.variable}`}>
       <body>
         <LanguageProvider>{children}</LanguageProvider>
         <script
