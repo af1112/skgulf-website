@@ -47,6 +47,24 @@
 [lang="ar"] {
   --font-sans: var(--font-noto-arabic);
   --font-heading: var(--font-noto-arabic);
+  font-family: var(--font-noto-arabic), sans-serif !important;
+}
+
+[lang="ar"] h1, 
+[lang="ar"] h2, 
+[lang="ar"] h3, 
+[lang="ar"] h4, 
+[lang="ar"] h5, 
+[lang="ar"] h6, 
+[lang="ar"] p, 
+[lang="ar"] span, 
+[lang="ar"] a, 
+[lang="ar"] button,
+[lang="ar"] div,
+[lang="ar"] input,
+[lang="ar"] textarea,
+[lang="ar"] select {
+  font-family: var(--font-noto-arabic), sans-serif !important;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
