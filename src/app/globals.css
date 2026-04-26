@@ -3,6 +3,7 @@
 @theme inline {
   --font-sans: var(--font-inter);
   --font-heading: var(--font-jakarta);
+  --font-arabic: var(--font-ibm-plex-arabic);
 }
 
 /* =============================================
@@ -43,6 +44,11 @@
   --duration-slow: 500ms;
 }
 
+[lang="ar"] {
+  --font-sans: var(--font-ibm-plex-arabic);
+  --font-heading: var(--font-ibm-plex-arabic);
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
@@ -52,11 +58,15 @@ html {
 }
 
 body {
-  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
   color: var(--text-primary);
   background: var(--white);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+[lang="ar"] body {
+  line-height: 1.8;
 }
 
 a { color: inherit; text-decoration: none; }
